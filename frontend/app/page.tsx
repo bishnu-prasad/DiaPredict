@@ -116,8 +116,8 @@ export default function LandingPage() {
               <span className="absolute left-0 bottom-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
             </a>
           </div>
-          <Link href="/chat" className="bg-primary text-white font-bold px-6 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">
-            Try Now
+          <Link href="/chat" className="bg-primary text-white font-bold px-6 py-2.5 rounded-full shadow-md hover:shadow-lg hover:bg-accent transition-all duration-300 hover:scale-[1.05] active:scale-[0.97]">
+            Start Chat
           </Link>
         </div>
       </nav>
@@ -131,7 +131,7 @@ export default function LandingPage() {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="text-5xl md:text-[64px] font-extrabold tracking-tight text-slate-900 leading-[1.1]"
           >
-            Predict Diabetes Risk with AI Clarity
+            Chat with an AI Health Assistant for Diabetes Risk Analysis
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -139,7 +139,7 @@ export default function LandingPage() {
             transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
             className="text-lg md:text-xl text-slate-700 max-w-xl mx-auto md:mx-0 leading-relaxed font-medium"
           >
-            Smart ML-powered health insights for early detection. Highly calibrated risk stratification outputs deployed in seconds.
+            Interact with an intelligent AI assistant that guides you step-by-step, analyzes your health data, and delivers instant diabetes risk insights.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -147,10 +147,10 @@ export default function LandingPage() {
             transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
             className="flex flex-col sm:flex-row items-center gap-5 justify-center md:justify-start"
           >
-            <Link href="/chat" className="flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto justify-center">
-              Try Prediction <ArrowRight className="w-5 h-5" />
+            <Link href="/chat" className="flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold shadow-md hover:shadow-lg hover:bg-accent transition-all duration-300 hover:scale-[1.05] active:scale-[0.97] w-full sm:w-auto justify-center">
+              Start Assessment <ArrowRight className="w-5 h-5" />
             </Link>
-            <a href="#how-it-works" className="font-semibold text-slate-900 transition-colors underline underline-offset-4 decoration-2 decoration-transparent hover:decoration-primary duration-300 py-3.5">
+            <a href="#how-it-works" className="font-semibold text-slate-900 transition-colors underline underline-offset-4 decoration-2 decoration-transparent hover:decoration-accent duration-300 py-3.5">
               Learn More
             </a>
           </motion.div>
@@ -192,7 +192,7 @@ export default function LandingPage() {
                 transition={{ duration: 0.5, delay: i * 0.15, ease: "easeInOut" }}
                 viewport={{ once: true, margin: "-100px" }}
                 whileHover={{ translateY: -4 }}
-                className="p-8 rounded-2xl bg-white shadow-md border border-slate-100 hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center group"
+                className="p-8 rounded-2xl bg-white shadow-xl border border-slate-200 hover:shadow-2xl transition-all duration-300 flex flex-col items-center text-center group"
               >
                 <div className="w-14 h-14 bg-background rounded-2xl flex items-center justify-center mb-6 transition-colors group-hover:bg-accent/10">
                   <f.icon className="w-6 h-6 text-accent" />

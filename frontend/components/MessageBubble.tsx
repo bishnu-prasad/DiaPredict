@@ -54,7 +54,7 @@ export function MessageBubble({ msg }: MessageBubbleProps) {
         low: { color: "border-green-500 bg-green-50 text-green-900 fill-green-500", icon: CheckCircle2 },
         moderate: { color: "border-orange-500 bg-orange-50 text-orange-900 fill-orange-500", icon: AlertTriangle },
         medium: { color: "border-orange-500 bg-orange-50 text-orange-900 fill-orange-500", icon: AlertTriangle },
-        high: { color: "border-primary bg-red-50 text-red-900 fill-primary", icon: XCircle },
+        high: { color: "border-primary bg-blue-50 text-blue-900 fill-primary", icon: XCircle },
       };
       
       const config = riskMapping[riskLevel as keyof typeof riskMapping] || riskMapping.low;
@@ -117,9 +117,9 @@ export function MessageBubble({ msg }: MessageBubbleProps) {
           "px-5 py-3.5 rounded-2xl max-w-[85%] text-[16px] font-medium leading-relaxed shadow-sm transition-all duration-300",
           isAI
             ? type !== "text"
-              ? "bg-white border border-slate-200 text-slate-900 shadow-md"
-              : "bg-white border border-slate-100 text-slate-800 shadow-sm"
-            : "bg-primary text-white",
+              ? "bg-white border border-slate-300 text-slate-900 shadow-sm"
+              : "bg-white border border-slate-300 text-slate-800 shadow-sm"
+            : "bg-primary text-white shadow-lg",
           isAI ? "rounded-bl-sm" : "rounded-br-sm"
         )}
       >
