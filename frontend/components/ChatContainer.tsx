@@ -39,6 +39,7 @@ export function ChatContainer() {
 
   // SAFE RESTORE LOGIC (DEFENSIVE)
   useEffect(() => {
+    if (typeof window === "undefined") return;
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
@@ -68,7 +69,7 @@ export function ChatContainer() {
 
   // SAFE SERIALIZATION LAYER
   useEffect(() => {
-    if (!isLoaded) return;
+    if (!isLoaded || typeof window === "undefined") return;
 
     try {
       // Force serialization check - should contain NO JSX, NO any, NO functions
@@ -249,7 +250,8 @@ export function ChatContainer() {
     console.log("Payload Prepared:", payload);
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000/predict", payload);
+      const API_URL = process.env.NEXT_PUBLIC_API_URL;
+      const response = await axios.post(`${API_URL}/predict`, payload);
       const result: PredictionResult = response.data;
 
       setMessages(prev => {
