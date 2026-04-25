@@ -54,7 +54,7 @@ export function ChatContainer() {
           setFormData(parsed.formData || {});
           setHasStarted(Boolean(parsed.hasStarted));
           
-          if (Number(parsed.currentStep) >= STEPS.length || cleanMessages.some(m => m.type === "result")) {
+          if (Number(parsed.currentStep) >= STEPS.length || cleanMessages.some((m: MessageData) => m.type === "result")) {
             setIsComplete(true);
           }
         }
@@ -313,7 +313,7 @@ export function ChatContainer() {
             >
               <RotateCcw className="w-4 h-4" /> Reset Chat
             </button>
-            {!isComplete && currentStep > 0 && messages.some(m => m.role === "user") && (
+            {!isComplete && currentStep > 0 && messages.some((m: MessageData) => m.role === "user") && (
               <button 
                 onClick={handleEditLast}
                 disabled={isTyping || isLoading}
