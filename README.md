@@ -1,5 +1,5 @@
 
-🧠 DiaPredict — AI-Powered Diabetes Risk Prediction
+ DiaPredict — AI-Powered Diabetes Risk Prediction
 
 DiaPredict is a full-stack AI application that predicts diabetes risk using machine learning and an interactive chat-based interface. It provides users with real-time health insights in a clean, modern UI inspired by clinical tools.
 
