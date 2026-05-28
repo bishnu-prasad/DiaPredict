@@ -5,7 +5,7 @@ DiaPredict is a full-stack AI application that predicts diabetes risk using mach
 
 ⸻
 
-🚀 Features
+ Features
 	•	🤖 AI Chat-Based Assessment
 	•	📊 Real-Time Diabetes Risk Prediction
 	•	⚡ FastAPI Backend with ML Model
